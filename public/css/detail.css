@@ -1,0 +1,276 @@
+html,
+body {
+  width: 100% ;
+  height: 3000px;
+}
+.banner-center {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.clear_margin_right {
+  margin-right: 0 !important;
+}
+.clear_margin_bottom {
+  margin-bottom: 0 !important;
+}
+html {
+  font-size: 100px;
+}
+html body {
+  font-size: 16px;
+  position: relative;
+  /*第一个导航栏*/
+  /*第二个导航栏*/
+  /*手机详情设置*/
+}
+html body #leader {
+  width: 100%;
+  background-color: #f7f7ff;
+}
+html body #leader #header-left {
+  font-size: 0.18rem;
+  float: left;
+  width: 2rem;
+  padding: 0.1rem 0;
+}
+html body #leader #header-right {
+  /* width: 5rem; */
+  float: right;
+}
+html body #leader #header-right > li {
+  float: left;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  padding: 0.12rem 0;
+  position: relative;
+}
+html body #leader #header-right > li span {
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../html/img/icon.png) 0.1rem 0.1rem;
+  /* background-position: 0.1rem -0.16rem; */
+  position: absolute;
+  right: -0.15rem;
+  top: 0.08rem;
+}
+html body #leader #header-right > li:hover {
+  color: #337ab7;
+}
+html body #leader #header-right > li:hover span {
+  background-position: 0.1rem -0.16rem;
+}
+html body #nav {
+  width: 100%;
+  padding: 0.15rem 0;
+  position: relative;
+  /* position: fixed;
+            left: 0;
+            top: 0; */
+  background: white;
+  z-index: 2000;
+  /*导航中间样式*/
+  /*导航右边CSS样式*/
+  /*下拉详情*/
+}
+html body #nav #nav-left {
+  float: left;
+  margin-right: 0.1rem;
+  margin-top: 0.03rem;
+}
+html body #nav #nav-center {
+  float: left;
+  position: relative;
+}
+html body #nav #nav-center > li {
+  float: left;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+html body #nav #nav-center > li a {
+  margin: 0 0.1rem;
+  padding: 0.6rem 0.12rem;
+  padding: 0 0.05rem;
+  overflow: hidden;
+  color: black;
+}
+html body #nav #nav-center > li:hover {
+  background: black;
+  border-radius: 0.15rem;
+  overflow: hidden;
+}
+html body #nav #nav-center > li:hover a {
+  color: white;
+}
+html body #nav #nav-right {
+  float: right;
+  margin-top: 0.05rem;
+}
+html body #nav #nav-right > li {
+  float: left;
+  margin: 0 0.1rem;
+  cursor: pointer;
+}
+html body #nav #nav-right > li span {
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.25rem;
+  margin: 0 0.01rem;
+  vertical-align: middle;
+}
+html body #nav #nav-right > li:nth-of-type(1) span {
+  background: url(../html/img/icon.png) -0.2rem 0.05rem;
+}
+html body #nav #nav-right > li:nth-of-type(2) span {
+  background: url(../html/img/icon.png) -0.74rem 0.04rem;
+}
+html body #nav #nav-right > li:nth-of-type(3) span {
+  background: url(../html/img/icon.png) -1rem 0.04rem;
+}
+html body #nav #nav-right > li:nth-of-type(4) span {
+  background: url(../html/img/icon.png) -1.28rem 0.05rem;
+}
+html body #nav .nav_info {
+  width: 100%;
+  z-index: 2000;
+  /* height: 4rem; */
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  padding-bottom: 1rem;
+  display: none;
+}
+html body #nav .nav_info .slide_positon {
+  margin-left: 1.5rem;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+html body #nav .nav_info .slide_positon .pic_show {
+  float: left;
+  border-right: 1px solid #999;
+}
+html body #nav .nav_info .slide_positon .pic_show > li {
+  float: left;
+  width: 1.5rem;
+  text-align: center;
+}
+html body #nav .nav_info .slide_positon .pic_show > li > img {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+html body #nav .nav_info .slide_positon .item_show {
+  float: left;
+  margin-left: 0.5rem;
+}
+html body #nav .nav_info .slide_positon .item_show > li {
+  text-align: left;
+}
+html body #nav .nav_info .slide_positon .item_show > li > a {
+  color: #999;
+}
+html body .display_contain {
+  height: 5rem;
+  background: #aaa19e;
+  overflow: hidden;
+  /*左边图片设置*/
+  /*右边福利设置*/
+}
+html body .display_contain .left_display {
+  float: left;
+  width: 50%;
+  /* background: red; */
+  /* height: 3rem; */
+  overflow: hidden;
+}
+html body .display_contain .left_display .list_item {
+  float: left;
+}
+html body .display_contain .left_display .list_item > p {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 auto;
+  background: url(../html/img/downArrow.png) center center no-repeat;
+  cursor: pointer;
+}
+html body .display_contain .left_display .list_item p:nth-of-type(2) {
+  margin-top: 4rem;
+  transform: rotate(180deg);
+}
+html body .display_contain .left_display .phone_list {
+  width: 1rem;
+  height: 4.1rem;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+html body .display_contain .left_display .phone_list .contain_ul {
+  position: absolute;
+}
+html body .display_contain .left_display .phone_list .contain_ul > li {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-bottom: 0.05rem;
+  border: 1px solid #ffffff;
+}
+html body .display_contain .left_display .phone_list .contain_ul > li > img {
+  width: 0.78rem;
+  height: 0.78rem;
+}
+html body .display_contain .left_display .phone_list .contain_ul > li:nth-of-type(1) {
+  background: url(../img/detail-phone-1.jpg) center center no-repeat;
+}
+html body .display_contain .left_display .big_contain .big_show {
+  width: 4.1rem;
+  height: 4.1rem;
+  margin-top: 0.5rem;
+  /* padding-top: 0.5rem; */
+  float: left;
+  background: url(../html/img/detail-phone-1.jpg) no-repeat center center / 100% 100%;
+}
+html body .display_contain .left_display .big_contain .big_show > img {
+  width: 4.1rem;
+  height: 4.1rem;
+}
+html body .display_contain .left_display .big_contain .big_show .small_move {
+  width: 1rem;
+  height: 1rem;
+  background: rgba(235, 215, 20, 0.5);
+}
+html body .display_contain .right_display {
+  float: left;
+  width: 45%;
+  background: orange;
+  /* height: 3rem; */
+  margin-left: 0.2rem;
+}
+html body .display_contain .right_display > h2 {
+  font-size: 0.2rem;
+  font-weight: bolder;
+}
+html body .display_contain .right_display > h3 {
+  font-size: 0.18rem;
+}
+html body .display_contain .right_display .point li:nth-of-type(1) {
+  list-style: disc;
+  color: #b28a83;
+  font-weight: bolder;
+}
+html body .display_contain .right_display .point li {
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+html body .display_contain .right_display .reward li:nth-of-type(1) {
+  list-style: disc;
+  color: #86a690;
+  font-weight: bolder;
+}
+html body .display_contain .right_display .reward li {
+  height: 0.3rem;
+  line-height: 0.3rem;
+}

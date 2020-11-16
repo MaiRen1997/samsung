@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100% ;
+  height: 3000px;
+}
+.banner-center {
+  width: 90%;
+  /* width: 1200px; */
+  margin: 0 auto;
+  background: orange;
+  overflow: hidden;
+}
+.clear_margin_right {
+  margin-right: 0 !important;
+}
+.clear_margin_bottom {
+  margin-bottom: 0 !important;
+}
+html {
+  font-size: 100px;
+}
+html body {
+  font-size: 16px;
+  position: relative;
+  background: #f2f2f2;
+  /*头部样式*/
+}
+html body .header {
+  width: 100%;
+  height: 0.9rem;
+  background: orangered;
+  margin-bottom: 0.5rem;
+}
+html body .header .logo_contain {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  display: flex;
+}
+html body .header .logo_contain .logo {
+  margin: 0;
+  align-self: center;
+}
+html body .header .logo_contain .logo > img {
+  width: 1.5rem;
+  height: 0.2rem;
+}
+html body .login_contain {
+  width: 50%;
+  margin: 0 auto;
+  background: orchid ;
+  height: 5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+html body .login_contain > h2 {
+  font-size: 0.39rem;
+  color: #0072de;
+}
