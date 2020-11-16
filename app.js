@@ -10,7 +10,7 @@ const productRouter = require('./router/product');
 
 let conf = {
     port: 8088,
-    host: 'localhost'
+    host: '10.31.162.52'
 };
 
 // 配置静态web服务

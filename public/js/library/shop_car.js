@@ -1,6 +1,6 @@
 $.ajax({
     type: "get",
-    url: "http://localhost:8088/product/getItem",
+    url: "http://10.31.162.52:8088/product/getItem",
     data: {
         id:id
     },

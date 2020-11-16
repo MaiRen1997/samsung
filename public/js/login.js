@@ -43,7 +43,7 @@ $(function() {
         /* console.log(1); */
         $.ajax({
             type: "post",
-            url: "http://localhost:8088/users/login",
+            url: "http://10.31.162.52:8088/users/login",
             data: {
                 username: $('[name=userName]').val(),
                 password: password,
