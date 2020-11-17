@@ -60,9 +60,9 @@ router.route('/login')
         // res.json(searchUser);
         conn.query(searchUser, (err, result) => {
             if (err) console.log(err);
-            // res.json(result);
-            // console.log(result);
-            if (result.length) {
+            // // res.json(result.length);
+            // // console.log(result);
+            if (result.length==1) {
                 res.cookie('username', req.body.username);
                 res.cookie('isLogined', true);
                 res.json({

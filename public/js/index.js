@@ -48,6 +48,7 @@ $(function() {
     /*下拉框的显示与隐藏 */
     {
         $('#nav-center>li').hover(function() {
+            $('.nav_info').stop(true,false);
             $('.nav_info').slideDown();
         }, function() {
             $('.nav_info').slideUp();
@@ -90,7 +91,8 @@ $(function() {
             $(".content").animate({
                 "left": -1700 * index
             }, 1000);
-            changePoint(index);
+            changePoint(index-1);
+            clearInterval(timer);
         });
         /*设置点击的背景图*/
         $('.last_li').on("click", function() {
@@ -123,4 +125,22 @@ $(function() {
         effect: 'fadeIn',
         placeholder: '../html/img/timg.gif'
     });
+    /*设置更改登录名字*/
+    /* if(localStorage.getItem(`${document.cookie.split(';')[1].split('=')[1]}`=='true')){
+        $("#is_loged").text(document.cookie.split(';')[0].split('=')[1]);
+    } */
+    $("#is_loged").text(document.cookie.split(';')[0].split('=')[1]);
+
+    /* let splie_result = document.cookie.split(';').map(function(elm){
+        return elm.split('=');
+    })
+    // console.log(splie_result);
+    let result_arr = splie_result[0].concat(splie_result[1]);
+    result_arr.map(function(el){
+        el.toString().trim();
+    }); */
+    /* console.log(result_arr);
+    console.log(result_arr.indexOf('username'));
+    console.log(result_arr[result_arr.indexOf('username')]); */
+    // console.log(document.cookie.split(';')[1].split('=')[1] =='true');
 });

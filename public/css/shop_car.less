@@ -35,7 +35,7 @@ html{
                 >li{
                     width: 30%;
                     height: 100%;
-                    float: left;
+                    /* float: left; */
                     display: inline-block;
                     >span{
                         display: inline-block;
@@ -60,8 +60,46 @@ html{
                         display: inline-block;
                         width: 50px;
                         height: 50px;
-                    }
+                    }  
                 }
+                .order_id{
+                    display: none;
+                }
+                .add{
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 0.5rem;
+                    height: 0.25rem;
+                    margin-right:0.1rem;
+                    background: rebeccapurple;
+                    color: white;
+                    border-radius: 0.1rem;
+                }
+                .del{
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-left: 0.1rem;
+                    width: 0.5rem;
+                    height: 0.25rem;
+                    color: white;
+                    background: rebeccapurple;
+                    border-radius: 0.1rem;
+                }
+            }
+        }
+        .cal_contain{
+            height: 1rem;
+            text-align: left;
+            .cal_price{
+                width: 1rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                text-align: center;
+                background: rgb(230, 173, 206);
+                color: white;
+                border-radius: 0.25rem;
+                display: inline-block;
+
             }
         }
     }

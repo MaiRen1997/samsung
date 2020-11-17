@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/shop_car.css">
     <script src="../../js/index.js" type="module"></script>
-    <script src="../../js/porduct.js" type="module"></script>
-    <script src="../../js/library/shop_car.js"></script>
+    <script src="../../js/porduct.js" type="module"></script>s
+    <script src="../../js/library/shop_car.js" type="module"></script>
 </head>
 <body>
     <div id="leader">
         <!-- 版心 -->
         <div class="banner-center gray">
             <!-- 左边div -->
-            <div id="header-left">三星网上商城</div>
+            <div id="header-left"><a href="../index.html">三星网上商城</a></div>
             <!-- 右边div -->
             <ul id="header-right">
                 <li>三星官网<span></span></li>
@@ -49,25 +49,29 @@
                             <td>总价</td>
                             <td>操作</td>
                         </tr>
-                        <tr>
+                        <!-- <tr class ='good_item'>
                             <td><input type="checkbox"></td>
-                            <td><img src="../img/smart_all_2.jpg" alt=""></td>
+                            <td><img src="../img/smart_all_2.jpg" alt="" width="100px" height="100px"></td>
                             <td>手机1</td>
-                            <td>1</td>
-                            <td>1200</td>
-                            <td>1200</td>
-                            <td><span>删除</span></td>
+                            <td><span  class = 'add'>+</span><span class="num">1</span><span class="del">-</span></td>
+                            <td class="price">1200</td>
+                            <td class="total_price">1200</td>
+                            <td><a href=""><span>删除</span></a></td>
                         </tr>
-                        <tr>
+                        <tr class = 'good_item'>
                             <td><input type="checkbox"></td>
-                            <td><img src="../img/smart_all_3.jpg" alt=""></td>
-                            <td>手机1</td>
-                            <td><span>+</span>1<span>-</span></td>
-                            <td>1900</td>
-                            <td>1900</td>
-                            <td><span>删除</span></td>
-                        </tr>
+                            <td><img src="../img/smart_all_3.jpg" alt="" width="100px" height="100px"></td>
+                            <td>手机2</td>
+                            <td><span  class = 'add'>+</span><span class="num">1</span><span class="del">-</span></td>
+                            <td class="price">1900</td>
+                            <td class="total_price">1900</td>
+                            <td><a href=""><span>删除</span></a></td>
+                        </tr> -->
                     </table>
+                    <div class="cal_contain banner-center">
+                        <span>总价</span>
+                        <div class="cal_price"><span>￥</span>0.00</div>
+                    </div>
                 </div>
                 <!-- 提交订单页面 -->
                 <div class="calculate"></div>

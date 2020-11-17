@@ -8,7 +8,7 @@ import cookie from './library/cookie.js';
             type=$(this).attr('id');
         $.ajax({
             type: "get",
-            url: 'http://localhost:8088/product/getProducts',
+            url: 'http://10.31.162.52:8088/product/getProducts',
             /* data: { id: id }, */
             data:{type:type},
             dataType: "json",

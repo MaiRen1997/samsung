@@ -25,15 +25,17 @@ router.route('/getProducts')
 
 router.route('/getItem')
     .get((req, res, next) => {
-        let sql = `select * from shop_car where id=${req.query.id}`;
+        // let sql = `select * from shop_car where id=${req.query.id}`;
+        let sql = `select * from shop_car`;
+        // res.json(sql);
         conn.query(sql, (err, result) => {
-            if (err) console.log(err);
+            if (err) {
+                console.log(err);
+            }
             else{
                res.json(result); 
             }
             /* if (result.length) {
-                res.cookie('username', req.body.username);
-                res.cookie('isLogined', true);
                 res.json({
                     msg: "查询成功",
                     error: 0,
@@ -51,14 +53,43 @@ router.route('/getItem')
     });
 
 
-/* router.route('/getItems')
+router.route('/setItems')
     .get((req, res, next) => {
-        let sql = `select * from product where id in (${req.query.idList})`;
-
+        // res.json(1);
+        // let sql = `select * from product where id in (${req.query.idList})`;
+        // res.json(req.query.total_price);
+        let sql =`UPDATE shop_car  SET num = ${req.query.num},total_price =${req.query.total_price}  WHERE order_id = ${req.query.id}`;
+        //  res.json(sql);
         conn.query(sql, (err, result) => {
             if (err) console.log(err);
             res.json(result);
-        })
-    }); */
+        });
+    });
+router.route('/removeItems')
+    .get((req, res, next) => {
+        // res.json(1);
+        // let sql = `select * from product where id in (${req.query.idList})`;
+        // res.json(req.query.total_price);
+        let sql =`DELETE FROM shop_car  WHERE order_id = ${req.query.id}`;
+        //  res.json(sql);
+        conn.query(sql, (err, result) => {
+            if (err) console.log(err);
+            res.json(result);
+        });
+    });
+router.route('/add_Items')
+    .get((req, res, next) => {
+        // res.json(1);
+        // let sql = `select * from product where id in (${req.query.idList})`;
+        // res.json(req.query.total_price);
+        let sql =`INSERT INTO shop_car(id, title, num, price, total_price,picture) VALUES('${req.query.id}','${req.query.title}','${req.query.num}','${req.query.price}','${req.query.total_price}','${req.query.picture}')`;
+       /*  sql = sql.toString();
+        console.log(sql); */
+        //  res.json(sql);
+        conn.query(sql, (err, result) => {
+            if (err) console.log(err);
+            res.json(result);
+        });
+    });
 
 module.exports = router;

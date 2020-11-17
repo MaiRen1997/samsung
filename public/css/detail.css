@@ -175,7 +175,6 @@ html body #nav .nav_info .slide_positon .item_show > li > a {
 }
 html body .display_contain {
   height: 5rem;
-  background: #aaa19e;
   overflow: hidden;
   /*左边图片设置*/
   /*右边福利设置*/
@@ -211,6 +210,9 @@ html body .display_contain .left_display .phone_list {
 }
 html body .display_contain .left_display .phone_list .contain_ul {
   position: absolute;
+  /* >li:nth-of-type(1){
+                                // background: url(../img/detail-phone-1.jpg) center center no-repeat;
+                            } */
 }
 html body .display_contain .left_display .phone_list .contain_ul > li {
   width: 0.8rem;
@@ -221,9 +223,6 @@ html body .display_contain .left_display .phone_list .contain_ul > li {
 html body .display_contain .left_display .phone_list .contain_ul > li > img {
   width: 0.78rem;
   height: 0.78rem;
-}
-html body .display_contain .left_display .phone_list .contain_ul > li:nth-of-type(1) {
-  background: url(../img/detail-phone-1.jpg) center center no-repeat;
 }
 html body .display_contain .left_display .big_contain .big_show {
   width: 4.1rem;
@@ -240,12 +239,12 @@ html body .display_contain .left_display .big_contain .big_show > img {
 html body .display_contain .left_display .big_contain .big_show .small_move {
   width: 1rem;
   height: 1rem;
-  background: rgba(235, 215, 20, 0.5);
+  /*  background: rgba(235,215,20,0.5); */
+  visibility: hidden;
 }
 html body .display_contain .right_display {
   float: left;
   width: 45%;
-  background: orange;
   /* height: 3rem; */
   margin-left: 0.2rem;
 }
@@ -273,4 +272,14 @@ html body .display_contain .right_display .reward li:nth-of-type(1) {
 html body .display_contain .right_display .reward li {
   height: 0.3rem;
   line-height: 0.3rem;
+}
+html body .display_contain .right_display .add_car {
+  width: 1rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: #337ab7;
+  border-radius: 0.1rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
 }

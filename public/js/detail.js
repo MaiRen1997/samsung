@@ -100,5 +100,30 @@ $(function() {
             /* }) */
         }
     }
+    {
+        $('.add_car').on('click',function(){
+            // console.log($('.contain_ul>li:eq(1)>img')[0].src);
+            $.ajax({
+                type: "get",
+                url: "http://10.31.162.52:8088/product/add_Items",
+                data: {
+                   /*  id:$(this).parent().siblings().children('.order_id').text() */
+                    id:22,
+                    title:$('.right_display>h2').text(),
+                    num:1,
+                    price:$('.right_display>h3>span').text(),
+                    total_price:$('.right_display>h3>span').text(),
+                    picture:`[{"src": "${$('.contain_ul>li:eq(1)>img')[0].src}","alt":"small3"}]`
+                },
+                dataType: "json", 
+                success: function(response) {
+                    console.log(response);
+                    if(response.length){
+                        console.log(1);
+                    }
+                }
+            });
+        });
+    }
 
 });

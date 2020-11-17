@@ -37,7 +37,7 @@ html body .contain .leader {
 html body .contain .leader > li {
   width: 30%;
   height: 100%;
-  float: left;
+  /* float: left; */
   display: inline-block;
 }
 html body .contain .leader > li > span {
@@ -60,4 +60,41 @@ html body .shop_list table > td img {
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+html body .shop_list table .order_id {
+  display: none;
+}
+html body .shop_list table .add {
+  cursor: pointer;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.25rem;
+  margin-right: 0.1rem;
+  background: rebeccapurple;
+  color: white;
+  border-radius: 0.1rem;
+}
+html body .shop_list table .del {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.1rem;
+  width: 0.5rem;
+  height: 0.25rem;
+  color: white;
+  background: rebeccapurple;
+  border-radius: 0.1rem;
+}
+html body .cal_contain {
+  height: 1rem;
+  text-align: left;
+}
+html body .cal_contain .cal_price {
+  width: 1rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  background: #e6adce;
+  color: white;
+  border-radius: 0.25rem;
+  display: inline-block;
 }

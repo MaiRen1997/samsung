@@ -79,7 +79,7 @@ $('.submit').on('click', function() {
     /* console.log(1); */
     $.ajax({
         type: "post",
-        url: "http://localhost:8088/users/reg",
+        url: "http://10.31.162.52:8088/users/reg",
         data: {
             username: $('[name=registerUsername]').val(),
             password: password,
@@ -101,8 +101,8 @@ $('.submit').on('click', function() {
                 $('[name=registerAddress]').val('');
             }
             if(response.error==0){
-                alert('登录成功，即将跳转到登录页');
-                // location = "login-1.html";
+                alert('注册成功，即将跳转到登录页');
+                location = "login-1.html";
             }
         }
     });
